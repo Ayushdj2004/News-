@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taaza Khabar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="nav">
+        <nav>
+            <div class="main_nav">
+                <a href="#" onclick="reload()">
+                    <img class="breaking_img" src="breaking news.png" alt="Breaking News">
+                </a>
+                <div class="link">
+                    <ul>
+                        <li class="Politics nav-item" id="politics" onclick="onNavItemClick('politics')">Politics</li>
+                        <li class="Sports nav-item" id="sports" onclick="onNavItemClick('sport')">Sports</li>
+                        <li class="Finance nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                        <li class="Fashion nav-item" id="fashion" onclick="onNavItemClick('fashion')">Fashion</li>
+                    </ul>
+                </div>
+                <div class="search_bar">
+                    <input id="search-text" type="text" class="news_input" placeholder="Breaking news">
+                    <button id="search-button" class="search_button">Search</button>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <main>
+        <section class="cards" id="cards_container">
+            <div class="cards_container">
+               
+            </div>
+        </section>
+    </main> 
+    
+
+    <template id="template_news_card">
+        <section class="cards">
+                <div class="card">
+                    <div class="card_header">
+                        <img src="https://via.placeholder.com/400x200" alt="News Image" id="news_img">
+                    </div>
+                    <div class="card_content">
+                        <h3 id="news_title">This is title</h3>
+                        <h6 class="news_source" id="news_source">This is the subtitle</h6>
+                        <p class="news_desc" id="news_desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae laboriosam nostrum voluptate facere numquam nulla qui cumque! Repudiandae magni, rerum exercitationem, nulla sequi a labore tempore dolorem eos, aliquam harum?</p>
+                    </div>
+            </div>
+            
+        </section>
+    </template>
+
+    <script src="script.js"></script>
+</body>
+</html>
